@@ -1,4 +1,149 @@
-.nav {
+.container-fluid {
   width: 100%;
-  background: #FFFFFF;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.col-11 {
+  width: 91.67%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-7 {
+  width: 58.33;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+nav {
+  width: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+nav .right-nav i {
+  position: relative;
+  color: #89c818;
+  padding: 15px;
+  transition: 0.8s;
+}
+nav .right-nav i::after {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  content: "";
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+nav .right-nav i:hover::after {
+  border: 1px solid #89c818;
+  cursor: pointer;
+}
+nav .nav-center-main {
+  position: relative;
+}
+nav .nav-center-main .nav-center {
+  display: flex;
+}
+nav .nav-center-main .nav-center .nav-list::after {
+  padding: 0 10px;
+  position: relative;
+  content: "";
+  top: 0;
+  left: 0;
+  border-right: 2px solid grey;
+}
+nav .nav-center-main .nav-center .nav-list .nav-link {
+  display: inline-block;
+  padding: 50px 20px;
+}
+nav .nav-center-main .nav-center .nav-list .nav-details {
+  border-radius: 10px;
+  position: absolute;
+  width: 288px;
+  background: url(/images/mega3.png);
+  top: 110%;
+  overflow: hidden;
+  height: 365px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  visibility: hidden;
+  transition: 0s;
+}
+nav .nav-center-main .nav-center .nav-list .nav-details .sub-mega-nav .sub-nav-list .sub-title-nav {
+  color: #242f51;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+nav .nav-center-main .nav-center .nav-list:hover .nav-details {
+  visibility: visible;
+  top: 100%;
+  transition: 0.8s;
+}
+nav .nav-center-main .nav-center .no-border::after {
+  position: relative;
+  border: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
 }/*# sourceMappingURL=main.css.map */

@@ -7,6 +7,10 @@
   margin: auto;
 }
 
+@mixin row{
+    display: flex;
+}
+
 @mixin col-1 {
   width: 8.33%;
 }
@@ -61,6 +65,10 @@
 
 .container {
   @include container;
+}
+
+.row{
+    @include row;
 }
 
 .col-12 {
